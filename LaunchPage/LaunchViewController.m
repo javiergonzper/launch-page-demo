@@ -36,6 +36,10 @@
     myCollectionView.dataSource = self;
     myCollectionView.scrollEnabled = YES;
     
+    [myCollectionView setShowsHorizontalScrollIndicator:NO];
+    [myCollectionView setShowsVerticalScrollIndicator:NO];
+    
+    
     myCollectionView.backgroundColor = [UIColor clearColor];
     
     
@@ -260,7 +264,7 @@
     
     if (myCollectionView.contentOffset.x < (myCollectionView.frame.size.width *index)) {
         
-        prevAlpha = 0.5 + ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
+        prevAlpha = ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
         
         currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
         nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
@@ -274,7 +278,7 @@
         prevAlpha = ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
         
         currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
-        nextAlpha = 0.25  + (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
+        nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
         NSLog(@"going right");
     }
     
