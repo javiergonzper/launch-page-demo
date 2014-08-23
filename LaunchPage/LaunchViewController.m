@@ -172,7 +172,7 @@
     index = pageControl.currentPage;
     
     prevAlpha = 0.0f;
-    currentAlpha = 1.0f;
+    currentAlpha = 1.5f;
     nextAlpha = 0.0f;
     
     [self setBackgroundImage];
@@ -217,9 +217,9 @@
     
     if (myCollectionView.contentOffset.x < (myCollectionView.frame.size.width *index)) {
         
-        prevAlpha = ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
+        prevAlpha = 0.4 + ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
         
-        currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
+        currentAlpha =  1.0 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
         nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
         
     }
@@ -229,7 +229,7 @@
         
         prevAlpha = ((myCollectionView.frame.size.width * index) - myCollectionView.contentOffset.x)/(myCollectionView.frame.size.width);
         
-        currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
+        currentAlpha =  1.5 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
         nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
     }
     
