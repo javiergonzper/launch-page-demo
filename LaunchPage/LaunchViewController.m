@@ -61,11 +61,11 @@
     
     index = 0;
     
-    [NSTimer scheduledTimerWithTimeInterval:5.0
+    /*[NSTimer scheduledTimerWithTimeInterval:5.0
                                      target:self
                                    selector:@selector(scrollTo)
                                    userInfo:nil
-                                    repeats:YES];
+                                    repeats:YES];*/
     
     prevAlpha = 0.0f;
     currentAlpha = 1.0f;
