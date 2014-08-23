@@ -94,11 +94,6 @@
     friendsyLogo.image = [UIImage imageNamed:@"launch-screen-logo@2x.png"];
     friendsyLogo.alpha = 1.0f;
     
-//    btnSignUp = [[UIButton alloc]
-//                 initWithFrame:CGRectMake(55, 505, 100, 30)];
-//    btnSignIn = [[UIButton alloc]initWithFrame:CGRectMake(265, 505, 100, 30)];
-//
-    
     btnSignUp = [UIButton buttonWithType:UIButtonTypeCustom];
     btnSignIn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -130,34 +125,6 @@
     [self.view addSubview:btnSignIn];
    }
 
--(void)scrollTo
-{
-    if (!pageTouched) {
-        index = pageControl.currentPage;
-        if (index >= 3) {
-            index = -1;
-            NSLog(@"here");
-        }
-        
-        index++;
-        CGFloat pageWidth = myCollectionView.frame.size.width;
-        CGPoint scrollTo = CGPointMake(pageWidth * index, 0);
-        if (index != 0)
-            [myCollectionView setContentOffset:scrollTo animated:YES];
-        else
-            [myCollectionView setContentOffset:scrollTo animated:NO];
-        
-        pageControl.currentPage = index;
-        
-        [self setBackgroundImage];
-        //NSLog(@"Not touched");
-        //NSLog(@"scrolled to page:%ld", (long)pageControl.currentPage);
-        
-
-    }
-}
-
-
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -182,8 +149,6 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //only iphone 5 right now, fix for iphone 4 later
-    //NSLog(@"new cell");
     return CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height);
 }
 
@@ -209,12 +174,6 @@
     prevAlpha = 0.0f;
     currentAlpha = 1.0f;
     nextAlpha = 0.0f;
-    NSLog(@"end scroll");
-    
-    NSLog(@"DUN DUN - prevAlpha: %f", prevAlpha);
-    NSLog(@"DUN DUN - currentAlpha: %f", currentAlpha);
-    NSLog(@"DUN DUN - nextAlpha: %f", nextAlpha);
-    NSLog(@"index pls: %ld", (long)index);
     
     [self setBackgroundImage];
     
@@ -231,10 +190,6 @@
 
 -(void)setBackgroundImage
 {
-//    backgroundImg
-//    NSLog(@"new image, index: %ld", (long)index);
-   // NSLog(@"new image, index: %ld", (long)index);
-//    
     if (index < 3 && index > 0) {
         backgroundImgPrev.image = [UIImage imageNamed:launchBackgroundImgs[index - 1]];
         backgroundImgCurrent.image = [UIImage imageNamed:launchBackgroundImgs[index]];
@@ -258,9 +213,6 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 
 {
-   // NSLog(@"HELLO");
-   // NSLog(@"le index: %ld", (long)index);
-    
     //Going left
     
     if (myCollectionView.contentOffset.x < (myCollectionView.frame.size.width *index)) {
@@ -269,7 +221,6 @@
         
         currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
         nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
-        NSLog(@"going left");
         
     }
     //going right
@@ -280,35 +231,13 @@
         
         currentAlpha =  1 - (fabsf(myCollectionView.frame.size.width * index - myCollectionView.contentOffset.x ))/(myCollectionView.frame.size.width);
         nextAlpha = (myCollectionView.contentOffset.x - (myCollectionView.frame.size.width * index))/(myCollectionView.frame.size.width);
-        NSLog(@"going right");
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    NSLog(@"newPrevAlpa: %f", prevAlpha);
-    NSLog(@"newCurrentAlpha: %f", currentAlpha);
-    NSLog(@"newNextAlpha: %f", nextAlpha);
-    
     
     backgroundImgPrev.alpha = prevAlpha;
     backgroundImgCurrent.alpha = currentAlpha;
     backgroundImgNext.alpha = nextAlpha;
     
 }
-
-
-
-
-
-
-
-
-
 
 
 @end
