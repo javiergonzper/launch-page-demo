@@ -92,6 +92,7 @@
     
     friendsyLogo = [[UIImageView alloc]initWithFrame:CGRectMake(85, 20, 150, 100)];
     friendsyLogo.image = [UIImage imageNamed:@"launch-screen-logo@2x.png"];
+    friendsyLogo.alpha = 1.0f;
     
 //    btnSignUp = [[UIButton alloc]
 //                 initWithFrame:CGRectMake(55, 505, 100, 30)];
@@ -101,8 +102,8 @@
     btnSignUp = [UIButton buttonWithType:UIButtonTypeCustom];
     btnSignIn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    btnSignUp.frame = CGRectMake(45, 525, 100, 30);
-    btnSignIn.frame = CGRectMake(175, 525, 100, 30);
+    btnSignUp.frame = CGRectMake(10, 520, 140, 40);
+    btnSignIn.frame = CGRectMake(170, 520, 140, 40);
     
     btnSignUp.layer.cornerRadius = 3.0f;
     btnSignUp.layer.masksToBounds = YES;

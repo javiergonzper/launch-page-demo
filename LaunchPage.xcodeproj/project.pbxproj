@@ -30,8 +30,8 @@
 		20DBA02019A7DC0300AB3CCD /* launch-screen-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01D19A7DC0300AB3CCD /* launch-screen-2@2x.png */; };
 		20DBA02119A7DC0300AB3CCD /* launch-screen-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01E19A7DC0300AB3CCD /* launch-screen-3@2x.png */; };
 		20DBA02919A87D6C00AB3CCD /* launch-screen-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */; };
-		20DBA03419A88A9400AB3CCD /* sign-in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03219A88A9400AB3CCD /* sign-in@2x.png */; };
-		20DBA03519A88A9400AB3CCD /* sign-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03319A88A9400AB3CCD /* sign-up@2x.png */; };
+		20DBA03D19A9358700AB3CCD /* sign-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03C19A9358700AB3CCD /* sign-up@2x.png */; };
+		20DBA03F19A9364F00AB3CCD /* sign-in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03E19A9364F00AB3CCD /* sign-in@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,8 @@
 		20DBA01D19A7DC0300AB3CCD /* launch-screen-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-2@2x.png"; sourceTree = "<group>"; };
 		20DBA01E19A7DC0300AB3CCD /* launch-screen-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-3@2x.png"; sourceTree = "<group>"; };
 		20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-logo@2x.png"; sourceTree = "<group>"; };
-		20DBA03219A88A9400AB3CCD /* sign-in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-in@2x.png"; sourceTree = "<group>"; };
-		20DBA03319A88A9400AB3CCD /* sign-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up@2x.png"; sourceTree = "<group>"; };
+		20DBA03C19A9358700AB3CCD /* sign-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up@2x.png"; sourceTree = "<group>"; };
+		20DBA03E19A9364F00AB3CCD /* sign-in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-in@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +188,8 @@
 		20DBA01119A7D15A00AB3CCD /* imgs */ = {
 			isa = PBXGroup;
 			children = (
-				20DBA03219A88A9400AB3CCD /* sign-in@2x.png */,
-				20DBA03319A88A9400AB3CCD /* sign-up@2x.png */,
+				20DBA03C19A9358700AB3CCD /* sign-up@2x.png */,
+				20DBA03E19A9364F00AB3CCD /* sign-in@2x.png */,
 				20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */,
 				20DBA01A19A7DBF700AB3CCD /* launch-screen-0@2x.png */,
 				20DBA01C19A7DC0300AB3CCD /* launch-screen-1@2x.png */,
@@ -278,13 +278,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DBA03419A88A9400AB3CCD /* sign-in@2x.png in Resources */,
 				20DBA01B19A7DBF700AB3CCD /* launch-screen-0@2x.png in Resources */,
 				20DBA01F19A7DC0300AB3CCD /* launch-screen-1@2x.png in Resources */,
 				20DBA01519A7D2A500AB3CCD /* friendsy2a.jpg in Resources */,
 				20DBA02119A7DC0300AB3CCD /* launch-screen-3@2x.png in Resources */,
-				20DBA03519A88A9400AB3CCD /* sign-up@2x.png in Resources */,
+				20DBA03D19A9358700AB3CCD /* sign-up@2x.png in Resources */,
 				20DBA01719A7D2B300AB3CCD /* friendsy3a.jpg in Resources */,
+				20DBA03F19A9364F00AB3CCD /* sign-in@2x.png in Resources */,
 				20DBA02019A7DC0300AB3CCD /* launch-screen-2@2x.png in Resources */,
 				20DBA01919A7D3A300AB3CCD /* terrace.jpg in Resources */,
 				20DBA01319A7D28300AB3CCD /* friendsy1a.jpg in Resources */,
@@ -509,6 +509,7 @@
 				20DBA00619A7C10D00AB3CCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20DBA00719A7C10D00AB3CCD /* Build configuration list for PBXNativeTarget "LaunchPageTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				20DBA00919A7C10D00AB3CCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
