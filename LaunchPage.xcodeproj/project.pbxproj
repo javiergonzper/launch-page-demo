@@ -19,6 +19,19 @@
 		20DB9FF719A7C10D00AB3CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DB9FDF19A7C10D00AB3CCD /* UIKit.framework */; };
 		20DB9FFF19A7C10D00AB3CCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20DB9FFD19A7C10D00AB3CCD /* InfoPlist.strings */; };
 		20DBA00119A7C10D00AB3CCD /* LaunchPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBA00019A7C10D00AB3CCD /* LaunchPageTests.m */; };
+		20DBA00C19A7C16C00AB3CCD /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBA00B19A7C16C00AB3CCD /* LaunchViewController.m */; };
+		20DBA01019A7CD8000AB3CCD /* imgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBA00F19A7CD8000AB3CCD /* imgCollectionViewCell.m */; };
+		20DBA01319A7D28300AB3CCD /* friendsy1a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01219A7D28300AB3CCD /* friendsy1a.jpg */; };
+		20DBA01519A7D2A500AB3CCD /* friendsy2a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01419A7D2A500AB3CCD /* friendsy2a.jpg */; };
+		20DBA01719A7D2B300AB3CCD /* friendsy3a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01619A7D2B300AB3CCD /* friendsy3a.jpg */; };
+		20DBA01919A7D3A300AB3CCD /* terrace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01819A7D3A300AB3CCD /* terrace.jpg */; };
+		20DBA01B19A7DBF700AB3CCD /* launch-screen-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01A19A7DBF700AB3CCD /* launch-screen-0@2x.png */; };
+		20DBA01F19A7DC0300AB3CCD /* launch-screen-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01C19A7DC0300AB3CCD /* launch-screen-1@2x.png */; };
+		20DBA02019A7DC0300AB3CCD /* launch-screen-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01D19A7DC0300AB3CCD /* launch-screen-2@2x.png */; };
+		20DBA02119A7DC0300AB3CCD /* launch-screen-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA01E19A7DC0300AB3CCD /* launch-screen-3@2x.png */; };
+		20DBA02919A87D6C00AB3CCD /* launch-screen-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */; };
+		20DBA03419A88A9400AB3CCD /* sign-in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03219A88A9400AB3CCD /* sign-in@2x.png */; };
+		20DBA03519A88A9400AB3CCD /* sign-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBA03319A88A9400AB3CCD /* sign-up@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +61,21 @@
 		20DB9FFC19A7C10D00AB3CCD /* LaunchPageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaunchPageTests-Info.plist"; sourceTree = "<group>"; };
 		20DB9FFE19A7C10D00AB3CCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20DBA00019A7C10D00AB3CCD /* LaunchPageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchPageTests.m; sourceTree = "<group>"; };
+		20DBA00A19A7C16C00AB3CCD /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		20DBA00B19A7C16C00AB3CCD /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		20DBA00E19A7CD8000AB3CCD /* imgCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgCollectionViewCell.h; sourceTree = "<group>"; };
+		20DBA00F19A7CD8000AB3CCD /* imgCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imgCollectionViewCell.m; sourceTree = "<group>"; };
+		20DBA01219A7D28300AB3CCD /* friendsy1a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friendsy1a.jpg; sourceTree = "<group>"; };
+		20DBA01419A7D2A500AB3CCD /* friendsy2a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friendsy2a.jpg; sourceTree = "<group>"; };
+		20DBA01619A7D2B300AB3CCD /* friendsy3a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friendsy3a.jpg; sourceTree = "<group>"; };
+		20DBA01819A7D3A300AB3CCD /* terrace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terrace.jpg; sourceTree = "<group>"; };
+		20DBA01A19A7DBF700AB3CCD /* launch-screen-0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-0@2x.png"; sourceTree = "<group>"; };
+		20DBA01C19A7DC0300AB3CCD /* launch-screen-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-1@2x.png"; sourceTree = "<group>"; };
+		20DBA01D19A7DC0300AB3CCD /* launch-screen-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-2@2x.png"; sourceTree = "<group>"; };
+		20DBA01E19A7DC0300AB3CCD /* launch-screen-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-3@2x.png"; sourceTree = "<group>"; };
+		20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-logo@2x.png"; sourceTree = "<group>"; };
+		20DBA03219A88A9400AB3CCD /* sign-in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-in@2x.png"; sourceTree = "<group>"; };
+		20DBA03319A88A9400AB3CCD /* sign-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +135,8 @@
 		20DB9FE119A7C10D00AB3CCD /* LaunchPage */ = {
 			isa = PBXGroup;
 			children = (
+				20DBA01119A7D15A00AB3CCD /* imgs */,
+				20DBA00D19A7C17200AB3CCD /* VC */,
 				20DB9FEA19A7C10D00AB3CCD /* AppDelegate.h */,
 				20DB9FEB19A7C10D00AB3CCD /* AppDelegate.m */,
 				20DB9FED19A7C10D00AB3CCD /* Images.xcassets */,
@@ -142,6 +172,35 @@
 				20DB9FFD19A7C10D00AB3CCD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20DBA00D19A7C17200AB3CCD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				20DBA00A19A7C16C00AB3CCD /* LaunchViewController.h */,
+				20DBA00B19A7C16C00AB3CCD /* LaunchViewController.m */,
+				20DBA00E19A7CD8000AB3CCD /* imgCollectionViewCell.h */,
+				20DBA00F19A7CD8000AB3CCD /* imgCollectionViewCell.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		20DBA01119A7D15A00AB3CCD /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				20DBA03219A88A9400AB3CCD /* sign-in@2x.png */,
+				20DBA03319A88A9400AB3CCD /* sign-up@2x.png */,
+				20DBA02819A87D6C00AB3CCD /* launch-screen-logo@2x.png */,
+				20DBA01A19A7DBF700AB3CCD /* launch-screen-0@2x.png */,
+				20DBA01C19A7DC0300AB3CCD /* launch-screen-1@2x.png */,
+				20DBA01D19A7DC0300AB3CCD /* launch-screen-2@2x.png */,
+				20DBA01E19A7DC0300AB3CCD /* launch-screen-3@2x.png */,
+				20DBA01819A7D3A300AB3CCD /* terrace.jpg */,
+				20DBA01219A7D28300AB3CCD /* friendsy1a.jpg */,
+				20DBA01419A7D2A500AB3CCD /* friendsy2a.jpg */,
+				20DBA01619A7D2B300AB3CCD /* friendsy3a.jpg */,
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +278,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DBA03419A88A9400AB3CCD /* sign-in@2x.png in Resources */,
+				20DBA01B19A7DBF700AB3CCD /* launch-screen-0@2x.png in Resources */,
+				20DBA01F19A7DC0300AB3CCD /* launch-screen-1@2x.png in Resources */,
+				20DBA01519A7D2A500AB3CCD /* friendsy2a.jpg in Resources */,
+				20DBA02119A7DC0300AB3CCD /* launch-screen-3@2x.png in Resources */,
+				20DBA03519A88A9400AB3CCD /* sign-up@2x.png in Resources */,
+				20DBA01719A7D2B300AB3CCD /* friendsy3a.jpg in Resources */,
+				20DBA02019A7DC0300AB3CCD /* launch-screen-2@2x.png in Resources */,
+				20DBA01919A7D3A300AB3CCD /* terrace.jpg in Resources */,
+				20DBA01319A7D28300AB3CCD /* friendsy1a.jpg in Resources */,
 				20DB9FE619A7C10D00AB3CCD /* InfoPlist.strings in Resources */,
 				20DB9FEE19A7C10D00AB3CCD /* Images.xcassets in Resources */,
+				20DBA02919A87D6C00AB3CCD /* launch-screen-logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +311,8 @@
 			files = (
 				20DB9FEC19A7C10D00AB3CCD /* AppDelegate.m in Sources */,
 				20DB9FE819A7C10D00AB3CCD /* main.m in Sources */,
+				20DBA01019A7CD8000AB3CCD /* imgCollectionViewCell.m in Sources */,
+				20DBA00C19A7C16C00AB3CCD /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
