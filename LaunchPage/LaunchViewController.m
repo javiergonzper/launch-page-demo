@@ -43,7 +43,7 @@
     myCollectionView.backgroundColor = [UIColor clearColor];
     
     
-    launchBackgroundImgs = @[@"terrace.jpg",@"friendsy2a.jpg",@"friendsy1a.jpg", @"friendsy3a.jpg"];
+    launchBackgroundImgs = @[@"selfie@2x.png",@"friendsy2a.jpg",@"friendsy1a.jpg", @"terrace@2x.png"];
     
     launchImgs = @[@"launch-screen-0@2x.png", @"launch-screen-1@2x.png", @"launch-screen-2@2x.png", @"launch-screen-3@2x.png"];
     
@@ -52,7 +52,7 @@
     // set up the page control
     CGFloat width = self.view.frame.size.width;
     
-    CGRect frame = CGRectMake(0, 500, width, 10);
+    CGRect frame = CGRectMake(0, 460, width, 10);
     pageControl = [[UIPageControl alloc]
                    initWithFrame:frame
                    ];
@@ -97,8 +97,8 @@
     btnSignUp = [UIButton buttonWithType:UIButtonTypeCustom];
     btnSignIn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    btnSignUp.frame = CGRectMake(10, 520, 140, 40);
-    btnSignIn.frame = CGRectMake(170, 520, 140, 40);
+    btnSignUp.frame = CGRectMake(20, 490, 135, 40);
+    btnSignIn.frame = CGRectMake(165, 490, 135, 40);
     
     btnSignUp.layer.cornerRadius = 3.0f;
     btnSignUp.layer.masksToBounds = YES;
@@ -108,7 +108,7 @@
     
     [btnSignUp setBackgroundImage:[UIImage imageNamed:@"sign-up@2x.png"]forState:UIControlStateNormal];
     
-     [btnSignIn setBackgroundImage:[UIImage imageNamed:@"sign-in@2x.png"]forState:UIControlStateNormal];
+    [btnSignIn setBackgroundImage:[UIImage imageNamed:@"sign-in@2x.png"]forState:UIControlStateNormal];
     
 
     [self.view addSubview:backgroundImgPrev];
